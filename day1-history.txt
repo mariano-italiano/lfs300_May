@@ -1,0 +1,225 @@
+ 1002  vi
+ 1003  gedit
+ 1004  nano
+ 1005  man nano
+ 1006  man mkdir
+ 1007  man sed
+ 1008  man cpio
+ 1009  info mkdir
+ 1010  info sed
+ 1011  man sed
+ 1012  sed -h
+ 1013  sed --help
+ 1014  man sed
+ 1015  apropos sed
+ 1016  whatis sed
+ 1017  whatios mkdir
+ 1018  whatis mkdir
+ 1019  man man
+ 1020  man -f mkdir
+ 1021  aliases
+ 1022  alias 
+ 1023  find / -name whatif 
+ 1024  cd /usr/share/doc
+ 1025  ls -la
+ 1026  ls -la | head
+ 1027  ls -la | head -20
+ 1028  cd yum-3.4.3
+ 1029  ls
+ 1030  ls -la
+ 1031  less AUTHORS
+ 1032  less README 
+ 1033  yum -h
+ 1034  yum install -h
+ 1035  clear
+ 1036  cd
+ 1037  cat /etc/*release
+ 1038  cat /etc/redhat-release 
+ 1039  uname -r
+ 1040  uname -a
+ 1041  clear
+ 1042  mutt
+ 1043  mail
+ 1044  q
+ 1045  curl https://google.com
+ 1046  curl www.google.com
+ 1047  curl www.google.com -o
+ 1048  curl -o www.google.com 
+ 1049  curl -o  /tmp/gogle.html www.google.com 
+ 1050  less /tmp/gogle.html 
+ 1051  curl -v telnet://192.168.1.54:22
+ 1052  telnet SSH-2.0-OpenSSH_8.0
+ 1053  telnet 192.168.1.54 22
+ 1054  yum isntall telnet
+ 1055* yum repoli
+ 1056  yum install telnet
+ 1057  telnet 192.168.1.54 22
+ 1058  q
+ 1059  ssh student@Trying 192.168.1.54...
+ 1060  Connected to 192.168.1.54.
+ 1061  clear
+ 1062  ssh student@192.168.1.54 
+ 1063  ls -la
+ 1064  ls -l
+ 1065  ls -lah 
+ 1066  less .ssh/known_hosts 
+ 1067  vi .ssh/known_hosts
+ 1068  ssh student@192.168.1.54 
+ 1069  vi .ssh/known_hosts
+ 1070  ssh student@192.168.1.54 
+ 1071  ssh root@192.168.1.54 
+ 1072  ssh-keygen --help
+ 1073  ssh-keygen --h
+ 1074  clear
+ 1075  ssh-keygen -t rsa
+ 1076  cd /root/.ssh/
+ 1077  ls -la
+ 1078  ssh-copy-id id_rsa.pub root@192.168.1.54
+ 1079  ssh-copy-id root@192.168.1.54
+ 1080  ssh 'root@192.168.1.54'
+ 1081  ssh-copy-id student@192.168.1.54
+ 1082  ssh 'student@192.168.1.54'
+ 1083  yum install pssh
+ 1084  cd
+ 1085  vi computers
+ 1086  ip a 
+ 1087  vi computers
+ 1088  pssh -i -h computers "date;hostname"
+ 1089  ssh 192.168.1.81
+ 1090  ssh-copy-id root@192.168.1.81
+ 1091  pssh -i -h computers "date;hostname"
+ 1092  pssh -i -h computers "hostname;yum install pssh -y"
+ 1093  yum search pssh
+ 1094  ls -la
+ 1095  vi testScp
+ 1096  scp testScp root@192.168.1.54:/root/
+ 1097  pwd
+ 1098  scp root@192.168.1.54:/root/LFS300_V5.2_RESOURCES.tar . 
+ 1099  ls 
+ 1100  ls -la
+ 1101  cd ..
+ 1102  pwd
+ 1103  cd
+ 1104  tar xvf LFS300_V5.2_RESOURCES.tar 
+ 1105  ls -la
+ 1106  cd LFS300
+ 1107  ls -la
+ 1108  cd RESOURCES/
+ 1109  cd ..
+ 1110  tree
+ 1111  cd ..
+ 1112  rsync --help
+ 1113  clear
+ 1114  rsync -rv LFS300 root@192.168.1.54:/root/
+ 1115  rsync -0h
+ 1116  rsync -h
+ 1117  rsync -rvn LFS300 root@192.168.1.54:/root/
+ 1118  rsync -rvh LFS300 root@192.168.1.54:/root/
+ 1119  rsync -rvhu LFS300 root@192.168.1.54:/root/
+ 1120  nano computers 
+ 1121  emacs
+ 1122  emacs computers 
+ 1123  echo line one > myfile
+ 1124  echo line one
+ 1125  vi myfile 
+ 1126  echo line two > myfile
+ 1127  vi myfile 
+ 1128  echo line one > myfile
+ 1129  echo line two > myfile
+ 1130  echo line one > myfile
+ 1131  echo line two >> myfile
+ 1132  vi myfile 
+ 1133  echo line three >> myfile
+ 1134  vi myfile 
+ 1135  cat << EOF > myfile2
+test1
+test2
+test3
+EOF
+
+ 1136  vi myfile2
+ 1137  vi myfile3
+ 1138  cat plik
+ 1139  cat plik 2> wyjscieblad
+ 1140  vi wyjscieblad
+ 1141  cat plik >& wyjscieblad
+ 1142  cat plik >& wyjscieblad2
+ 1143  vi wyjscieblad2
+ 1144  ls -la plik >& wyjscieblad2
+ 1145  vi wyjscieblad2
+ 1146  vimtutor 
+ 1147  vi wyjscieblad2
+ 1148  vimtutor 
+ 1149  vi myfile3
+ 1150  df -h
+ 1151  cd /boot/
+ 1152  ls -la
+ 1153  ls -lah
+ 1154  cd grub2
+ 1155  ls -la
+ 1156  vi grub.cfg
+ 1157* vi /e
+ 1158  vi grub.cfg
+ 1159  vi /etc/default/grub 
+ 1160  vi /boot/grub/grub.cfg
+ 1161  vi /boot/grub2/grub.cfg
+ 1162  cd
+ 1163  sysctl 
+ 1164  sysctl -a
+ 1165  sysctl -a | grep -i ip_for
+ 1166  echo "1" > /proc/sys/net/ipv4/ip_forward
+ 1167  sysctl -a | grep -i ip_forward
+ 1168  vi /etc/sysctl.conf 
+ 1169  sysctl -h
+ 1170  sysctl -p
+ 1171  sysctl -a | grep -i kernel.pid_max
+ 1172  sysctl -a | grep -i kernel.thred
+ 1173  sysctl -a | grep -i kernel.threds
+ 1174  sysctl -a | grep -i kernel.threads
+ 1175  sysctl -a | grep -i echo_ignore
+ 1176  sysctl -a | grep -i ttl
+ 1177  sysctl -a | grep -i vm.swap
+ 1178  sysctl -a | grep -i vm.huge
+ 1179  sysctl -a | grep -i hugepa
+ 1180  lsmod
+ 1181  lsmod | grep -i vmx
+ 1182  lsmod | grep -i net3
+ 1183  modprobe -h
+ 1184  modprobe vmxnet3
+ 1185  lsmod | grep -i net3
+ 1186  lsmod
+ 1187  clear
+ 1188  modinfo vmxnet3
+ 1189  modinfo e1000
+ 1190  find /lib
+ 1191  find /lib/modules/3.10.0-1160.59.1.el7.x86_64 -type f -name '*.ko'
+ 1192  find /lib/modules/3.10.0-1160.59.1.el7.x86_64 -type f -name '*.ko*'
+ 1193  find /lib/modules/3.10.0-1160.59.1.el7.x86_64 -type f -name '*.ko*' | grep -i net3
+ 1194  history > /tmp/day1-history.txt
+ 1195  init3
+ 1196  init 3
+ 1197  cd /lib/systemd/system
+ 1198  ls -la
+ 1199  ls -la /lib/systemd/system/*.target
+ 1200  systemctl list-units --type target
+ 1201  systemctl list-units --type target --all
+ 1202  systemctl get-default 
+ 1203  ssh root@192.168.0.54
+ 1204  ssh root@192.168.1.54
+ 1205  nmap 192.168.1.0
+ 1206  nmap 192.168.1.0/24
+ 1207  nmap -sP 192.168.1.0/24
+ 1208  history 
+ 1209  yum install git
+ 1210  git config --global user.name "Marcin Kujawski"
+ 1211  git config --global user.email "markuj5@gmail.com"
+ 1212  git config --list
+ 1213  cd
+ 1214  ls -la
+ 1215  cd LFS300/
+ 1216  ls
+ 1217  git clone https://github.com/mariano-italiano/lfs300_May.git
+ 1218  ls
+ 1219  cd lfs300_May/
+ 1220  ls
+ 1221  history > day1-history.txt
