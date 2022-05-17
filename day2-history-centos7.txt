@@ -1,0 +1,456 @@
+ 1000  which mkdir
+ 1001  which -h
+ 1002  which vi
+ 1003  df -h
+ 1004  ls -lF / |grep bin
+ 1005  cd /usr/bin/
+ 1006  ls -la
+ 1007  which getenforce
+ 1008  cd /usr/sbin/
+ 1009  ls -la
+ 1010  ip a s
+ 1011  whereis geneforce
+ 1012  whereis mkdir
+ 1013  cd
+ 1014  pwd
+ 1015  cd /usr/share/docs
+ 1016  cd /usr/share/bison/
+ 1017  pwd
+ 1018  cd
+ 1019  cd /tmp
+ 1020  cd ~
+ 1021  cd /tmp/
+ 1022  cd $HOME
+ 1023  echo $HOME
+ 1024  cd
+ 1025  cd /usr/share/
+ 1026  cd ..
+ 1027  ls
+ 1028  cd share/
+ 1029  cd ../lib
+ 1030  cd ../share/
+ 1031  cd ..
+ 1032  cd lib
+ 1033  cd /usr/share/
+ 1034  cd /usr/lib
+ 1035  cd /
+ 1036  ls -la
+ 1037  ls -a
+ 1038  ls -la
+ 1039  tree
+ 1040  cd /home
+ 1041  tree
+ 1042  cd /
+ 1043  ls -la
+ 1044  cd bin
+ 1045  pwd
+ 1046  ls
+ 1047  ls -la | wc-l
+ 1048  ls -la | wc -l
+ 1049  cd /usr/bin/
+ 1050  ls -la | wc -l
+ 1051  cd /
+ 1052  ls -la
+ 1053  cd
+ 1054  ls -la
+ 1055  ln -s myfile link1
+ 1056  ls -la
+ 1057  vi myfile
+ 1058  vi link1
+ 1059  rm myfile
+ 1060  ls -la
+ 1061  vi link1
+ 1062  ls -la
+ 1063  ls -li
+ 1064  ln myfile2 link2
+ 1065  ls -la
+ 1066  ls -li
+ 1067  vi myfile2
+ 1068  vi link2
+ 1069  vi myfile2
+ 1070  vi link2
+ 1071  vi myfile2
+ 1072  rm link2
+ 1073  ls -li
+ 1074  ln myfile2 link2
+ 1075  ls -li
+ 1076  rm myfile2
+ 1077  ls -li
+ 1078  ln myfile2 link2
+ 1079  ln myfile3 link3
+ 1080  ls -li
+ 1081  find . -inum 930004
+ 1082  cd /tmp
+ 1083  cd
+ 1084  cd -
+ 1085  cd /home/student/
+ 1086  cd
+ 1087  pushd -h
+ 1088  pushd -help
+ 1089  pushd --help
+ 1090  pushd /home/student
+ 1091  cd
+ 1092  popd
+ 1093  pushd /tmp
+ 1094  popd
+ 1095  $HOME_STUDENT=/home/student
+ 1096  HOME_STUDENT=/home/student
+ 1097  cd $HOME_STUDENT
+ 1098  pwd
+ 1099  cd
+ 1100  clear
+ 1101  echo $PS1
+ 1102  PS1="\h:@\u > "
+ 1103  PS1="\h:@\u terminal "
+ 1104  PS1="\h@\u terminal "
+ 1105  PS1="FQDN=\h cmd> "
+ 1106  PS1="\h:\u \t > "
+ 1107  PS1="\h:\u \w > "
+ 1108  cd /tmp
+ 1109* cd /var/lo
+ 1110  PS1="[\u@\h \w]\$"
+ 1111  PS1="[\u@\h | dir=\w]\$"
+ 1112  PS1="[\u@\h \W]\$"
+ 1113  pwd
+ 1114  cd
+ 1115  PS1="[\u@\h \W]\$ "
+ 1116  ls -la
+ 1117  PS1="[\u@\h \W]\# "
+ 1118  cd
+ 1119  PS1="[\u@\h \W]\$ "
+ 1120  ls -la
+ 1121  vi .bashrc
+ 1122  vi /etc/bashrc
+ 1123  cat /etc/bashrc | grep PS1 -n
+ 1124  locate zip
+ 1125  locate zip | grep -i bin
+ 1126  locate ip
+ 1127  locate ip | grep -i bin
+ 1128  man find
+ 1129  find /home/student -type d -empty
+ 1130  find /home/student -name D* -type d -empty
+ 1131  vi /home/student/test1.json
+ 1132  cp -rp /home/student/test1.json /home/student/test2.json
+ 1133  cp -rp /home/student/test1.json /home/student/test3.json
+ 1134  ls -la /home/student/
+ 1135  chown student:student /home/student/*.json
+ 1136  ls -la /home/student/
+ 1137  cd /home/student/
+ 1138  find . -type f *.json
+ 1139  find . -type f "*.json"
+ 1140  find . -type f -name *.json
+ 1141  find . -type f -name "*.json"
+ 1142  cd
+ 1143  find . -type f -user student
+ 1144  find / -type f -user student
+ 1145  find / -type f -user student | grep -v "/."
+ 1146  find /home/student/ -type f -name "*.json" -exec cp {} /tmp/ \;
+ 1147  ls -la /tmp/*json
+ 1148  rpm --help
+ 1149  rpm -qa
+ 1150  rpm -qa | sort > all_RPMs.txt
+ 1151  less all_RPMs.txt
+ 1152  rpm -qa | grep -i nano
+ 1153  rpm -qa | grep -i kernel
+ 1154  rpm -e nano-2.3.1-10.el7.x86_64
+ 1155  rpm -qa | grep -i nano
+ 1156  nano
+ 1157  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/nano-2.3.1-10.el7.x86_64.rpm
+ 1158  ls
+ 1159  rpm -ivh nano-2.3.1-10.el7.x86_64.rpm
+ 1160  rpm -qa | grep -i nano
+ 1161  rpm --help
+ 1162  mycommand
+ 1163  which yum
+ 1164  ls -la /usr/bin/yum
+ 1165  ls -la /usr/bin/dnf
+ 1166  rpm -e nano
+ 1167  rpm -qa | grep -i nano
+ 1168  yum repolist
+ 1169  yum install nano
+ 1170  yum install nano -y
+ 1171  yum search nano
+ 1172  yum search netstat
+ 1173  yum repoinfo
+ 1174  vi /etc/yum.repos.d/CentOS-Base.repo
+ 1175  yum remove nano
+ 1176  which netstat
+ 1177  yum provides "/usr/bin/netstat"
+ 1178  yum provides "*netstat"
+ 1179  yum localinstall nano-2.3.1-10.el7.x86_64.rpm
+ 1180  yum grouplist
+ 1181  yum group install "Basic Web Server"
+ 1182  yum history list
+ 1183  yum history undo 105
+ 1184  yum history undo 104
+ 1185  yum history list
+ 1186  yum history redo 106
+ 1187  yum history list
+ 1188  yum repolist
+ 1189  yum repoinfo
+ 1190  yum-config-manager --disablerepo google-chrome
+ 1191  yum repolist
+ 1192  vi /etc/yum.repos.d/google-chrome.repo
+ 1193  yum --help
+ 1194  yum --disablerepo=google-chrome
+ 1195  yum --disablerepo=google-chrome update
+ 1196
+ 1197  yum-config-manager --help
+ 1198  yum-config-manager --disable google-chrome
+ 1199  yum repolist
+ 1200  vi /etc/yum.repos.d/google-chrome.repo
+ 1201  yum repolist
+ 1202  vi /etc/yum.repos.d/google-chrome.repo
+ 1203  yum repolist
+ 1204  yum-config-manager --help
+ 1205  yum repolist
+ 1206  wget http://mirror.centos.org/altarch/7/os/aarch64/Packages/git-all-1.8.3.1-23.el7_8.noarch.rpm
+ 1207  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/kernel-3.10.0-1160.el7.x86_64.rpm
+ 1208  wget http://mirror.centos.org/altarch/7/os/aarch64/Packages/NetworkManager-1.18.8-1.el7.aarch64.rpm
+ 1209  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/createrepo-0.9.9-28.el7.noarch.rpm
+ 1210  ls -la
+ 1211  ls -la *.rpm
+ 1212  mkdir RPMs; mv *.rpm RPMs/
+ 1213  ls -la
+ 1214  cd RPMs\
+ 1215  cd RPMs
+ 1216  ls -la
+ 1217  yum localinstall createrepo-0.9.9-28.el7.noarch.rpm
+ 1218  rpm -qa|grep-i createrepo
+ 1219  rpm -qa|grep -i createrepo
+ 1220  createrepo -h
+ 1221  [A
+ 1222  createrepo --database /root/RPMs/
+ 1223  ls -la
+ 1224  cd repodata
+ 1225  ls -la
+ 1226  vi repomd.xml
+ 1227  cd ..
+ 1228  cd
+ 1229  yum repolist
+ 1230  yum-config-manager --add-repo file:///root/RPMs/
+ 1231  yum repolist
+ 1232  vi /etc/yum.repos.d/root_RPMs_.repo
+ 1233  yum repolist
+ 1234  yum module list
+ 1235  cd /proc/
+ 1236  mkdir test
+ 1237  df -h
+ 1238  df -hT
+ 1239  cd
+ 1240  du -h
+ 1241  du --help
+ 1242  du -sh /tmp/*
+ 1243  du -sh /usr/lib64/
+ 1244  du -sh /tmp/
+ 1245  du -sh /usr/lib64/* | head
+ 1246  df -h
+ 1247  cd /var
+ 1248  du -sh *
+ 1249  du -sh * | grep M
+ 1250  du -sh * | grep G
+ 1251  cd cache/
+ 1252  du -sh *
+ 1253  cd yum
+ 1254  ls -la
+ 1255  du -sh *
+ 1256  cd x86_64/
+ 1257  du -sh *
+ 1258  cd 7/
+ 1259  du -sh *
+ 1260  yum clean all
+ 1261  du -sh *
+ 1262  cd
+ 1263  du --max-depth=1 -hx /
+ 1264  du --help
+ 1265  du --max-depth=1 -hx /
+ 1266  du --max-depth=1 -hx /home
+ 1267  cd /usr
+ 1268  du --max-depth=1 -hx .
+ 1269  blkid
+ 1270  lsblk
+ 1271  cat /proc/partitions
+ 1272  partprobe
+ 1273  cat /proc/partitions
+ 1274  for i in {0..2}; do echo "- - -" > /sys/class/scsi_host/host$i/scan; done
+ 1275  for i in {1..10}; do mkdir /tmp/lfstest_$i; done
+ 1276  ls -la /tmp/ | grep -i lfs*
+ 1277  cat /proc/partitions
+ 1278  fdisk /dev/sdb
+ 1279  gfisk /dev/sdb
+ 1280  gdisk /dev/sdb
+ 1281  cat /proc/partitions
+ 1282  mkfs.ext4 /dev/sdb1
+ 1283  blkid
+ 1284  gdisk /dev/sdb
+ 1285  blkid
+ 1286  pvcreate /dev/sdb2
+ 1287  vgcreate -h
+ 1288  vgcreate vg_c7 /dev/sdb2
+ 1289  lvcreate -h
+ 1290  lvcreate -L 100%FREE -n lv_c7 vg_c7
+ 1291  lvcreate -l 100%FREE -n lv_c7 vg_c7
+ 1292  pvs
+ 1293  vgs
+ 1294  lvs
+ 1295  cat /proc/partitions
+ 1296  mkfs.xfs /dev/sdb2
+ 1297  cd
+ 1298  cat /proc/partitions
+ 1299  vgs
+ 1300  mkfs.xfs /dev/vg_c7/lv_c7
+ 1301  blkid
+ 1302  lsblk
+ 1303  df -h
+ 1304  mount -h
+ 1305  mkdir /physicalPartition
+ 1306  mkdir /lvm
+ 1307  mount /dev/sdb1 /physicalPartition
+ 1308  mount /dev/vg_c7/lv_c7 /lvm/
+ 1309  df -h
+ 1310  vi /etc/fstab
+ 1311  blkid
+ 1312  vi /etc/fstab
+ 1313  df -gh
+ 1314  df -h
+ 1315  cd /lvm
+ 1316  ls
+ 1317  ls -la
+ 1318  touch plik1 plik2 plik3
+ 1319  ls -la
+ 1320  cd ../physicalPartition/
+ 1321  touch plik1 plik2 plik3
+ 1322  touch plik1 plik2 plik
+ 1323  ls -la
+ 1324  cd ..
+ 1325  cd
+ 1326  cd /lvm/
+ 1327  uimount /lvm
+ 1328  umount /lvm
+ 1329  cd
+ 1330  umount /lvm
+ 1331  umount /physicalPartition
+ 1332  df -h
+ 1333  mount -a
+ 1334  df -h
+ 1335  vi /etc/fstab
+ 1336  umount /lvm
+ 1337  mount -a
+ 1338  df -h
+ 1339  vi /etc/fstab
+ 1340  df -h
+ 1341  mount -a
+ 1342  df -h
+ 1343  cd /lvm
+ 1344  dd if=/dev/urandom of=bigFile bs=1M count=400
+ 1345  df -h
+ 1346  dd if=/dev/urandom of=bigFile2 bs=1M count=40
+ 1347  df -h
+ 1348  lvs
+ 1349  vgs
+ 1350  pvs
+ 1351  gedit /dev/sdb
+ 1352  umount /lvm
+ 1353  cd
+ 1354  umount /lvm
+ 1355  gedit /dev/sdb
+ 1356  gdisk /dev/sdb
+ 1357  cat /proc/partitions
+ 1358  for i in {0..2}; do echo "- - -" > /sys/class/scsi_host/host$i/scan; done
+ 1359  cat /proc/partitions
+ 1360  partprobe
+ 1361  cat /proc/partitions
+ 1362  pvcreate /dev/sdb3
+ 1363  vgextend -h
+ 1364  vgextend vg_c7 /dev/sdb3
+ 1365  pvs
+ 1366  vgs
+ 1367  lvextend -L +250M /dev/vg_c7/lv_c7
+ 1368  lvdisplay /dev/vg_c7/lv_c7
+ 1369  vgdisplay vg_c7
+ 1370  lvs
+ 1371  df -h
+ 1372  mount /lvm
+ 1373  df -h
+ 1374  df -hT
+ 1375  xfs_growfs /lvm
+ 1376  df -hT
+ 1377  e2label
+ 1378  e2label /dev/vg_c7/lv_c7
+ 1379  e2label /lvm
+ 1380  e2label /dev/sdb2
+ 1381  e2label /dev/sdb1
+ 1382  e2label /dev/vg_c7/lv_c7 MyLvmPartition
+ 1383  e2label /dev/sdb2 MyMbrPartition
+ 1384  e2label /dev/mapper/vg_c7-lv_c7 MyLvmPartition
+ 1385  lsblk
+ 1386  e2label /dev/sdb1 MyMbrPartition
+ 1387  lsblk
+ 1388  blkid
+ 1389  vi /etc/fstab
+ 1390  umount /physicalPartition
+ 1391  df -h
+ 1392  mount -a
+ 1393  df -h
+ 1394  e4defrag -h
+ 1395  e4defrag --help
+ 1396  man e4defrag
+ 1397  e4defrag -c /var/log
+ 1398  pvs
+ 1399  vgs
+ 1400  swapon -s
+ 1401  cat /proc/swaps
+ 1402  lvcreate -n swap2 -L 200M vg_c7
+ 1403  lvs
+ 1404  mkswap /dev/vg_c7/swap2
+ 1405  cat /proc/swaps
+ 1406  swapon /dev/vg_c7/swap2
+ 1407  cat /proc/swaps
+ 1408  df -h
+ 1409  cd /lvm/
+ 1410  ls
+ 1411  ls -lah
+ 1412  mv bigFile swap3
+ 1413  mkswap swap3
+ 1414  swapon swap3
+ 1415  swapon -s
+ 1416  swapoff swap3
+ 1417  swapon -s
+ 1418  swapoff swap2
+ 1419  swapoff /dev/vg_c7/swap2
+ 1420  swapoff swap2
+ 1421  swapon -s
+ 1422  yum groupinstall file-server -y
+ 1423  systemctl status firewalld.service
+ 1424  systemctl disable --now firewalld.service
+ 1425  systemctl status firewalld.service
+ 1426  systemctl status rpcbind
+ 1427  systemctl status nfs-server.service
+ 1428  systemctl start nfs-server.service
+ 1429  systemctl status nfs-server.service
+ 1430  cd
+ 1431  cd /lvm/
+ 1432  ls
+ 1433  mkdir nfs
+ 1434  mv plik* nfs/
+ 1435  ls -la nfs/
+ 1436  chmod 777 nfs/
+ 1437  chmod 777 nfs/ -R
+ 1438  ls -la nfs/
+ 1439  vi /etc/exports
+ 1440  exportfs -rav
+ 1441  systemctl restart nfs-server.service
+ 1442  systemctl status nfs-server.service
+ 1443  showmount -e localhost
+ 1444  df -h
+ 1445  ls -la
+ 1446  cd nfs/
+ 1447  ls -la
+ 1448  ll
+ 1449  alias
+ 1450  cd /var/log
+ 1451  ls -la
+ 1452  ls -la audit/
+ 1453  getenforce
+ 1454  ssh 192.168.1.54
+

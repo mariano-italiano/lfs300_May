@@ -1,0 +1,299 @@
+   31  vi /etc/ssh/sshd_config
+   32  systemctl restart sshd
+   33  pss
+   34  pssh
+   35  yum search pssh
+   36  init 6
+   37  telinit 3
+   38  init 3
+   39  runlevel
+   40  init 5
+   41  cd /lib/systemd/
+   42  ls -la
+   43  ls -la runlevel*.target
+   44  ls -la *.target
+   45  cd system
+   46  ls -la *.target
+   47  vi remote-fs.target
+   48  systemctl get-default
+   49  systemctl set-default multi-user.target
+   50  reboot
+   51  systemctl get-default
+   52  runlevel
+   53  reboot
+   54  pam_tally2 --user root
+   55  passwd
+   56  init 5
+   57  systemctl start/stop/restart
+   58  systemctl status sshd
+   59  systemctl stop gdm
+   60  systemctl status gdm
+   61  systemctl status chrony
+   62  systemctl status chronyd
+   63  systemctl stop chronyd
+   64  systemctl status chronyd
+   65  systemctl disable chronyd
+   66  systemctl status chronyd
+   67  systemctl enable --now chronyd
+   68  systemctl status chronyd
+   69  poweroff
+   70  dnf module list
+   71  dnf module info -profile php
+   72  dnf module info php7.4
+   73  dnf module info php
+   74  dnf module install php:7.4
+   75  dnf module remove php:7.4
+   76  dnf module install perl:5.30/minimal
+   77  dnf module list
+   78  dnf module install nodejs:14/minimal
+   79  dnf module install nodejs:14
+   80  dnf module install nodejs:14/minial
+   81  dnf module install nodejs:14/minimal
+   82  ls -la
+   83  ls -lai
+   84  ls -la /
+   85  cd /proc/
+   86  ls
+   87  cd 40
+   88  ls
+   89  cd ..
+   90  cat /proc/filesystems
+   91  cat /proc/filesystems  | grep -v nodev
+   92  df -hT
+   93  df -h
+   94  ls -la /
+   95  cd
+   96  yum install nfs-utils
+   97  mount -h
+   98  mkdir /nfs-share
+   99  mount 192.168.1.81:/lvm/nfs /nfs-share/
+  100  df -h
+  101  cd /nfs-share/
+  102  ls
+  103  ls -la
+  104  rm plik3
+  105  touch plik
+  106  ls -la
+  107  ls -la /var/log/audit/
+  108  less /var/log/audit/audit.log
+  109  journalctl
+  110  systemd-analyze
+  111  systemd-analyze blame
+  112  journalctl -u chrony
+  113  journalctl -u chronyd
+  114  journalctl -h
+  115  which chronyd
+  116  journalctl /usr/sbin/chronyd
+  117  journalctl -b
+  118  journalctl -p err
+  119  journalctl -h
+  120  journalctl -f
+   70  cd /run/log/journal/
+   71  ls
+   72  cd d1dd3357ae71449ca12cac7e71c975fd/
+   73  ls
+   74  less system.journal
+   75  cd
+   76  cd /var/log/
+   77  ls -la
+   78  mkdir journal
+   79  cd journal/
+   80  ls -la
+   81  cd ..
+   82  vi /etc/systemd/journald.conf
+   83  systemctl restart systemd-journal
+   84  systemctl restart systemd-journald
+   85  ls -la journal/
+   86  cd journal/d1dd3357ae71449ca12cac7e71c975fd/
+   87  ls
+   88  cd /run/log/
+   89  ls -la
+   90  cd
+   91  clear
+   92  ls -la
+   93  less anaconda-ks.cfg
+   94  more anaconda-ks.cfg
+   95  tail -h
+   96  tail --help
+   97  tail anaconda-ks.cfg
+   98  tail anaconda-ks.cfg -n 20
+   99  tail anaconda-ks.cfg -f
+  100  tail -f /var/log/messages
+  101  head anaconda-ks.cfg
+  102  head anaconda-ks.cfg -n33
+  103  touch plik
+  104  ls -la
+  105  touch plik2
+  106  ls -la
+  107  touch plik
+  108  ls -la
+  109  vi plik2
+  110  date
+  111  touch plik2
+  112  date
+  113  vi plik3
+  114  vi plik2
+  115  ls -la
+  116  vi plik3
+  117  touch plik3
+  118  ls -la
+  119  vi plik3
+  120  vi plik2
+  121  vi plik3
+  122  diff plik3 plik2
+  123  vi plik
+  124  cp plik plik1
+  125  vi plik1
+  126  diff plik plik1
+  127  vi plik1
+  128  diff plik plik1
+  129  diff -h
+  130  diff --help
+  131  mkdir folder
+  132  mkdir folder folder2
+  133  mkdir /folder/nastepny/kolejny/i/kolejny
+  134  mkdir /folder/nastepny/kolejny/i/kolejny -p
+  135  tree folder
+  136  tree /folder
+  137  rmdir /folder/
+  138  rmdir /folder/nastepny/kolejny/i/kolejny/
+  139  rmdir /folder/nastepny/kolejny/i/
+  140  rmdir /folder/nastepny/
+  141  mv /folder/ .
+  142  ls -la
+  143  tree folder
+  144  rm testScp
+  145  rm plik -y
+  146  rm plik -f
+  147  rm --help
+  148  rm -rf folder
+  149  ls -la
+  150  mkdir -p folder/test
+  151  touch folder/test/plik1
+  152  touch folder/test/plik12
+  153  cp --help
+  154  tree folder
+  155  cp -rp folder/test/plik1 folder
+  156  tree folder
+  157  ls -la folder
+  158  chown student:student folder/test/plik12
+  159  ls -la folder/test/
+  160  cp -p folder/test/plik12 folder/
+  161  ls -la folder/
+  162  tree
+  163  tree folder
+  164  cp folder folder/test/
+  165  tree folder
+  166  cp folder folder/test/ -r
+  167  cp /tmp/ folder/test/ -r
+  168  tree folder
+  169  rm -rf folder/test/tmp/Temp-5e18d248-057b-4740-a3c7-45ab85e07aab
+  170  rm -rf folder/test/tmp/vmware-root_*
+  171  tree folder
+  172  rm -rf folder/test/tmp/systemd-private-7e730c656dfb4992bd81adbd3ea1e5f3-*
+  173  tree folder
+  174  ls -la folder/test/tmp/
+  175  ls -la /tmp
+  176  tree folder
+  177  mv folder/test/tmp/ folder/
+  178  tree folder
+  179  mv folder/tmp/ folder/tmp/trash
+  180  mv folder/tmp/ folder/trash
+  181  tree folder
+  182  file folder/plik1
+  183  file folder/trash/anaconda.log
+  184  file /usr/bin/yum
+  185  file /usr/bin/dnf-3
+  186  which sshd
+  187  file /usr/sbin/sshd
+  188  file /var/log/journal/d1dd3357ae71449ca12cac7e71c975fd/system.journal
+  189  cp -rp folder/trash/ folder/trashGzip
+  190  cp -rp folder/trash/ folder/trashXz
+  191  cp -rp folder/trash/ folder/trashZip
+  192  tree folder
+  193  gzip -r folder/trashGzip/
+  194  ls folder
+  195  cd folder/trashGzip/
+  196  ls -la
+  197  rm -f .*
+  198  rm -fr .X*
+  199  rm -fr .T*
+  200  rm -fr .e*
+  201  rm -fr .l*
+  202  cd ..
+  203  gzip -r trashGzip/
+  204  ls -la
+  205  gzip --help
+  206  cd trashGzip/
+  207  ls -la
+  208  cd ..
+  209  dd if=/dev/urandom of=testCompression bs=1M count=50
+  210  ls
+  211  gzip testCompression gzip.gz
+  212  gzip --help
+  213  gzip testCompression -c
+  214  gzip -c testCompression
+  215  gzip -c testCompression test.gz
+  216  gzip testCompression
+  217  ls
+  218  rm testCompression.gz
+  219  dd if=/dev/urandom of=testCompression bs=1M count=50
+  220  gzip -c testCompression -1
+  221  ls -la
+  222  gzip -c testCompression plik.gz -1
+  223  gzip --help
+  224  gzip -k testCompression -1
+  225  ls -la
+  226  ls -lah
+  227  gzip -k testCompression -9
+  228  ls -lah
+  229  mv /root/Dokumenty
+  230  find / -name wallpaper.jpg
+  231  wget https://cdn.wallpapersafari.com/44/83/vVyHhe.jpg
+  232  ls -la
+  233  mv wp.jpg
+  234  mv vVyHhe.jpg wp.jpg
+  235  gzip -k wp.jpg -1
+  236  ls -la
+  237  ls -lah
+  238  gzip -k wp.jpg -9
+  239  ls -lah
+  240  wget https://edmullen.net/test/rc.jpg
+  241  ls -la
+  242  gzip -k rc -9
+  243  gzip -k rc.jpg -9
+  244  ls -lah
+  245  gzip -k rc.jpg -1
+  246  ls -lah
+  247  xz rc.jpg
+  248  ls -lah
+  249  ls -la
+  250  zip rc.jpg
+  251  zip rc.zip rc.jpg
+  252  wget https://edmullen.net/test/rc.jpg
+  253  zip rc.zip rc.jpg
+  254  ls -la
+  255  unzip rc.zip
+  256  ls -la
+  257  gzip -d rc.jpg.gz
+  258  xz -d rc.jpg.xz
+  259  tar --help
+  260  ls -la
+  261  rm -f rc.jpg.*
+  262  ls -la
+  263  rm rc.zip
+  264  rm testCompression* -f
+  265  ls -la
+  266  tar -cfv myPic.tar rc.jpg
+  267  tar -cfv rc.jpg plik.tar
+  268  tar cfv rc.jpg plik.tar
+  269  tar cfv myPic.tar rc.jpg
+  270  ls -la
+  271  tar zcfv myPic.tar.gz rc.jpg
+  272  tar jcfv myPic.tar.bzip2 rc.jpg
+  273  tar Jcfv myPic.tar.xz rc.jpg
+  274  ls -la
+  275  tar Jxfv myPic.tar.xz rc.jpg
+  276  tar jxfv myPic.tar.bzip2
+  277  tar xfv myPic.tar
+  278  tar zxfv myPic.tar.gz
