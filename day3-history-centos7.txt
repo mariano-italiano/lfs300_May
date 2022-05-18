@@ -1,0 +1,85 @@
+systemctl status chronyd.service
+systemctl disable --now chronyd.service
+yum install ntpd
+yum install ntp
+systemctl status ntpd
+systemctl start ntpd
+systemctl status ntpd
+timedatectl
+vi /etc/ntp.conf
+ntpd -p
+ntpq -p
+date
+yum provides *finger
+yum repolist
+yum provides *finger
+yum install finger
+finger student
+last
+su - student
+su student
+cat /etc/passwd
+cat /etc/passwd | grep -i student
+vi /etc/passwd
+su - student
+vi /etc/passwd
+cat /etc/shadow | grep root
+:
+who
+whami
+whoami
+vi /etc/profile
+adduser
+useradd
+useradd -u 1100 -G wheel -d /tmp/student2 -s /bin/ksh -c "Student 2 Test User" student2
+cat /etc/passwd | student2
+cat /etc/passwd | grep -i student2
+id student2
+su - student2
+usermod -s /bin/bash student2
+cat /etc/passwd | grep -i student2
+su - student2
+useradd -m -c "Student 3 Test User" student3
+su - student3
+id student3
+userdel
+ls -la /home/student3
+userdel -r student3
+ls -la /home/student3
+passwd
+passwd --help
+passwd student2
+passwd -l student2
+passwd -u student2
+id student2
+usermod -G ftp student2
+id student2
+usermod -aG wheel student2
+id student2
+usermod --help
+groupadd
+groupadd finanse
+groupadd marketing
+cat /etc/group
+chage
+chage --help
+man chage
+chage student2
+chage student2 -l
+chage -M 10 student2
+chage -E "2022-05-19" student2
+chage -I 5 student2
+chage student2 -l
+chage -I 15 student2
+chage student2 -l
+chage -I 250 student2
+chage student2 -l
+chage -M 99999 -I -1 -E -1 student2
+chage student2 -l
+chage -d 0 student2
+vi /etc/sudoers
+sudo --help
+su - student2
+useradd s3
+passwd s3
+

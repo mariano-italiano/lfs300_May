@@ -1,0 +1,60 @@
+date
+date +%d
+date +%d-%m
+date +%d-%m-%y
+date +%d-%m-%yyyy
+date +%d-%m-%Y
+date +%d/%m/%Y
+date +%d-%m-%Y_%H:%M:%S
+touch logfile_`date +%d-%m-%Y_%H:%M:%S`.log
+ls -la
+mkdir application_`date +%d-%m-%Y_%H:%M:%S`.log
+ls -la
+hwclock
+hwclock --help
+timedatectl
+timedatectl set-timezone Europe/San_Marino
+timedatectl
+timedatectl set-timezone Europe/Moscow
+timedatectl
+date
+timedatectl set-timezone Europe/Warsaw
+date
+timedatectl set-ntp no
+date
+timedatectl
+timedatectl set-ntp yes
+systemctl status ntp
+systemctl status ntpd
+systemctl status chronyd
+vi /etc/chrony.conf
+cat /etc/chrony.conf | grep -v "#"
+chronyc sources
+cat /etc/services
+cat /etc/services | grep -i ntp
+cat /etc/services | grep -i samba
+cat /etc/services | grep -i nfs
+cat /etc/services | grep -i rpcbind
+less /etc/services
+vi /etc/chrony.conf
+chronyc --help
+chronyc sources
+vi /etc/chrony.conf
+clear
+cat /etc/passwd | head
+id student
+cat /etc/shadow
+cat /etc/passwd | head
+cat /etc/shadow | head
+echo -n student | sha512sum
+ls -la /etc/shadow
+ls -la /etc/passwd
+clear
+vi /etc/default/
+vi /etc/default/useradd
+id student
+id root
+vi /etc/group
+cat /etc/group | grep 1000
+yum provides *finger
+
