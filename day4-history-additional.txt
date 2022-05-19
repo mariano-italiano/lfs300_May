@@ -1,0 +1,90 @@
+# DOCKER
+yum install snapd
+dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+dnf install docker-ce --nobest
+dnf install docker-ce --nobest --allowerasing
+dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.10-3.2.el7.x86_64.rpm
+dnf install docker-ce -y
+systemctl enable --now docker
+systemctl status docker
+docker pull nginx
+docker ps
+ls -a
+docker ps -a
+docker run -d --name webserver -p 8080:80 nginx
+docker ps -a
+docker exec -it webserver /bin/bash
+history
+history | cut -c 8-
+history | cut -c 8- | tail -16
+history | cut -c 8- | tail -20
+
+
+# LXC
+yum install snapd
+ln -s /var/lib/snapd/snap /snap
+systemctl enable --now snapd.socket
+systemctl status snapd.socket
+systemctl status snapd.service
+systemctl enable --now snapd.service
+systemctl status snapd.service
+history
+history > LFS300/lfs300_May/day42.txt
+reboot
+systemctl status snapd.service
+systemctl status snapd.socket
+systemctl enable --now snapd.service
+systemctl status snapd.service
+snap install lxd
+lxc list
+lxd init
+ip a
+lxc list
+lxc image list images:
+lxc image list images: | grep -i ubuntu
+lxc image list images: | grep -i mint
+lxc image list images: | grep -i fedora
+lxc launch images:ubuntu
+lxc launch ubuntu:22.04
+lxc list
+lxc exec pumped-worm bash
+lxc image list images: | grep -i 'fedora|machine'
+lxc image list images: | grep -i 'fedora'
+lxc launch images:f352ddc5203f
+lxc launch images:d91afdc9528f
+lxc launch images:f352ddc5203f
+lxc list
+lxc exec pumped-worm bash
+ssh 10.224.93.118
+lxc exec pumped-worm bash
+ssh 10.224.93.118
+lxc list
+lxc -h
+lxc rename pumped-worm ubuntu22
+lxc stop pumped-worm
+lxc rename pumped-worm ubuntu22
+lxc start ubuntu22
+lxc list
+ssh 10.224.93.118
+vi .ssh/known_hosts
+ssh 10.224.93.118
+lxc launch images:ubuntu
+lxc launch ubuntu:22.04 ubuntu22.0
+lxc launch ubuntu:22.04 ubuntu22.04
+lxc launch ubuntu:22.04 ubuntu22-04
+lxc list
+top
+free -m
+lxc list
+lxc profile list
+lxc profile edit default
+ls -la
+lxc file push myfile ubuntu22/tmp
+lxc file push myfile ubuntu22/tmp/
+lxc exec ubuntu22 bash
+lxc file pull ubuntu22/tmp/contenerFile .
+ls -la
+lxc config get ubuntu22 boot.autostart
+lxc config set ubuntu22 boot.autostart true
+lxc config get ubuntu22 boot.autostart
+

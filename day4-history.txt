@@ -1,0 +1,383 @@
+nmcli connection show
+nmcli dev show
+nmcli connection modify ens33 ipv4.addresses 192.168.1.224/24
+nmcli connection modify ens33 ipv4.dns 192.168.1.1
+nmcli connection show
+nmcli connection status
+nmcli device status
+nmcli device show
+nmcli connection down ens33 ; nmcli connection up ens33
+ip a s
+nmcli device show
+history
+nmcli connection show
+nmcli c e Internet
+history
+vi .nmcli-history
+nmtui-edit
+yum provides nmtui
+vi /etc/resolv.conf
+nmtui-edit
+nmcli connection delete Internet
+nmcli connection delete dmz
+ip a s
+nmcli connection show
+vi /etc/resolv.conf
+vi /etc/hosts
+ping centos8
+vi /etc/nsswitch.conf
+vi /etc/hosts
+ping centos8
+nslookup centos
+nslookup google.com
+ping google.com
+netstat
+netstat -vatnulp
+netstat -vatnulp
+netstat -vatnul
+netstat -vatnulp
+netstat --help
+ethtool
+ethtool ens33
+nslookup
+dig -h
+dig --help
+dig wp.pl
+dig -t mx wp.pl
+ethtool -S ens33
+ip -s link
+ip link show
+ip -s likn
+ip -s link
+netstat -vatnulp
+ss -ltuna
+ss -ltunavn
+ss -ltunav
+ss -ltuna
+traceroute wp.pl
+traceroute -I wp.pl
+traceroute -h
+traceroute --help
+traceroute -I wp.pl
+traceroute -I google.com
+systemctl status firewalld.service
+systemctl start firewalld.service
+systemctl status firewalld.service
+firewall-cmd
+firewall-cmd -h
+tion. It ... it now.
+Hint: Some lines were ellipsized, use -l to show in full.
+firewall-cmd --state
+firewall-cmd --list-all
+firewall-cmd --get-default-zone
+firewall-cmd --get-zones
+firewall-cmd --zone=work --list-
+firewall-cmd --zone=work --list
+firewall-cmd --zone=work
+firewall-cmd --zone=work --list-all
+firewall-cmd --zone=dmz --list-all
+firewall-cmd --zone=dmz --list-ports
+firewall-cmd --zone=external --list-ports
+firewall-cmd --zone=block --list-ports
+firewall-cmd --new-zone lfs300
+firewall-cmd --help
+firewall-cmd --help | grep -i new
+firewall-cmd --help | grep -i "new zone"
+firewall-cmd --new-zone=lfs300
+firewall-cmd --new-zone=lfs300 --permanent
+firewall-cmd --get-zones
+firewall-cmd --reload
+firewall-cmd --get-zones
+firewall-cmd --zone=lfs300 --add-service=ssh --permanent
+firewall-cmd --zone=lfs300 --add-service=dns --permanent
+firewall-cmd --zone=lfs300 --list-all
+firewall-cmd --reload
+firewall-cmd --zone=lfs300 --list-all
+firewall-cmd --change-interface=ens33 --zone=lfs300 --permanent
+firewall-cmd --get-zone
+firewall-cmd --get-default-zone
+firewall-cmd --reload
+firewall-cmd --get-default-zone
+firewall-cmd --zone=lfs300 --list-all
+firewall-cmd --get-active-zones
+firewall-cmd --get-services
+vi /etc/ssh/sshd_config
+systemctl restart sshd
+systemctl status sshd
+firewall-cmd --zone=lfs300 --add-port=2222 --permanent
+firewall-cmd --zone=lfs300 --add-port=2222/tcp --permanent
+firewall-cmd --reload
+firewall-cmd --zone=lfs300 --list-all
+firewall-cmd --zone=lfs300 --remove-service=dns
+firewall-cmd --zone=lfs300 --remove-service=dns --permanent
+firewall-cmd --zone=lfs300 --list-all
+firewall-cmd --reload
+ping wp.pl
+firewall-cmd --change-interface=ens33 --zone=public --permanent
+firewall-cmd --get-active-zones
+systemctl disable --now firewall
+systemctl stop firewalld.service
+systemctl disable --now firewalld.service
+systemctl status firewalld.service
+vi LFS300/lfs300_May/dhcpd.conf
+cd LFS300/lfs300_May/
+git status
+cd
+iostat
+netstat -i
+vmstat 5
+sar
+sar -a
+sar -A
+sar -b 3 3
+sar --help
+man sar
+sar
+yum install sar
+yum provides sar
+yum install sysstat
+vi /var/spool/cron/root
+vi /etc/cron.hourly/0anacron
+vi /etc/crontab
+vi /etc/cron.d/sysstat
+which sar
+/usr/bin/sar
+/usr/lib64/sa/sa2 -A
+/usr/lib64/sa/sa2
+sar -b 3 3
+sar -B 1 10
+sar -A
+top
+top --help
+man top
+w
+yum install snapd
+ln -s /var/lib/snapd/snap /snap
+systemctl enable --now snapd.socket
+systemctl status snapd.socket
+systemctl status snapd.service
+systemctl enable --now snapd.service
+systemctl status snapd.service
+
+
+
+
+
+
+
+-------------------------------------
+
+  998  kill
+  999  kill --help
+ 1000  man kill
+ 1001  ps
+ 1002  ps -h
+ 1003  ps --help
+ 1004  ps --help simple
+ 1005  ps --help list
+ 1006  man ps
+ 1007  ps -ef
+ 1008  ps -ef | grep -i sshd
+ 1009  kill -19 2528
+ 1010  ps -ef | grep -i sshd
+ 1011  kill -18 2528
+ 1012  kill -15 2528
+ 1013  ps -ef | grep -i sshd
+ 1014  kill
+ 1015  kill -s
+ 1016  kill -l
+ 1017  ps aux
+ 1018  ps axo pid,comm
+ 1019  ps axo start,priority,pid,comm
+ 1020  ps -efl
+ 1021  ps -efL
+ 1022* ps -U student
+ 1023  ps -U root
+ 1024  ps -U root | grep sshd
+ 1025  ps -efU root | grep sshd
+ 1026  alis
+ 1027  alias
+ 1028  pstree
+ 1029  pgrep httpd
+ 1030  pgrep http
+ 1031  pgrep ssh
+ 1032  pgrep -h
+ 1033  pgrep ssh -l
+ 1034  pgrep ssh -a
+ 1035  pgrep ssh -al
+ 1036  ps axo pid,command
+ 1037  ps axo pid,command | grep -i ssh
+ 1038  ps axo pid,command | grep -i ssh | grep -v grep
+ 1039  pgrep ssh -al
+ 1040  pgrep ssh -alc
+ 1041  pgrep ssh -alP
+ 1042  pgrep ssh -al -d "|"
+ 1043  pgrep -Ual student
+ 1044  pgrep -U student
+ 1045  pgrep -U root
+ 1046  pgrep -al -U root
+ 1047  pgrep -l -U root
+ 1048  pgrep -h
+ 1049  uptime
+ 1050  ls
+ 1051  vi skrypt.sh
+ 1052  chmod 700 skrypt.sh
+ 1053  ./skrypt.sh &
+ 1054  ps -ef | grep skrypt
+ 1055  ./skrypt.sh &
+ 1056  kill -9 3282
+ 1057  vi skrypt.sh
+ 1058  ./skrypt.sh &
+ 1059  vi skrypt.sh
+ 1060  ./skrypt.sh &
+ 1061  kill -9 3295
+ 1062  vi skrypt.sh
+ 1063  ./skrypt.sh
+ 1064  vi skrypt.sh
+ 1065  ./skrypt.sh &
+ 1066  tail -f /tmp/skrypt.log
+ 1067  vi skrypt.sh
+ 1068  rm /tmp/skrypt.log
+ 1069  ps -ef | grep -i skrypt
+ 1070  kill -15 3313
+ 1071  ps -ef | grep -i skrypt
+ 1072  ./skrypt.sh &
+ 1073  ps axo priority,pid | grep -i 3355
+ 1074  ps axo priority,pid,comm | grep -i 3355
+ 1075  ps axo priority,nice,pid,comm | grep -i 3355
+ 1076  nice +5 3355
+ 1077  renice +5 3355
+ 1078  ps axo priority,nice,pid,comm | grep -i 3355
+ 1079  renice -20 3355
+ 1080  ps axo priority,nice,pid,comm | grep -i 3355
+ 1081  renice -40 3355
+ 1082  renice -60 3355
+ 1083  renice +200 3355
+ 1084  renice +20 3355
+ 1085  ps axo priority,nice,pid,comm | grep -i 3355
+ 1086  cat /tmp/skrypt.log
+ 1087  kill -15 3355
+ 1088  nice -20 ./skrypt.sh
+ 1089  nice -20 ./skrypt.sh &
+ 1090  ps axo priority,nice,pid,comm | grep -i 3467
+ 1091  kill -9 3467
+ 1092  pidof shhd
+ 1093  pidof shh
+ 1094  pidof ssh
+ 1095  pidof sshd
+ 1096  pidof skrypt
+ 1097  pidof skrypt.sh
+ 1098  pidof audits
+ 1099  pidof auditd
+ 1100  pidof audit
+ 1101  pidof httpd
+ 1102  jobs
+ 1103  ./skrypt.sh &
+ 1104  jobs
+ 1105  kill -15 3545
+ 1106  at -h
+ 1107  at -l
+ 1108  man at
+ 1109  echo "Test at" | at now + 5 sec
+ 1110  echo "Test at" | at now + 5 second
+ 1111  echo "Test at" | at now + 5 seconds
+ 1112  echo "Test at" | at now + 5 days
+ 1113  echo "Test at" | at now + 5 minutes
+ 1114  echo "Test at" | at now + 5 seconds
+ 1115  date
+ 1116  echo "Test at nowy" | at -m 10:28
+ 1117  date
+ 1118  atq
+ 1119  date
+ 1120  atq
+ 1121  date
+ 1122  touch plikAt.txt | at -m 10:29
+ 1123  date
+ 1124  ls -la
+ 1125  atq
+ 1126  crontab -l
+ 1127  crontab -l student
+ 1128  crontab -l -u student
+ 1129  10:26:00 2022 a root
+ 1130  28      Thu May 19 10:31:00 2022 a root
+ 1131  crontab -e
+ 1132  vi cron.sh
+ 1133  chmod 700 cron.sh
+ 1134  pwd
+ 1135  crontab -e
+ 1136  crontab -l
+ 1137  ls -la
+ 1138  ls -la | grep cron
+ 1139  crontab -l
+ 1140  vi cron.sh
+ 1141  ls -la | grep cron
+ 1142  date
+ 1143  vi cron.sh
+ 1144  crontab -l
+ 1145  ls -la | grep cron
+ 1146  crontab -l
+ 1147  crontab -e
+ 1148  date
+ 1149  ls -la | grep cron
+ 1150  which touch
+ 1151  crontab -e
+ 1152  ls -la | grep cron
+ 1153  date
+ 1154  ls -la | grep cron
+ 1155  vi /etc/crontab
+ 1156  vi /etc/cron.d/sysstat
+ 1157  crontab -e
+ 1158  ls -la | grep cron
+ 1159  date
+ 1160  ls -la | grep cron
+ 1161  chown student cron.log
+ 1162  date\
+ 1163  date
+ 1164  ls -la | grep cron
+ 1165  vi /etc/cron.d/raid-check
+ 1166  vi /etc/cron.hourly/0anacron
+ 1167  vi /etc/cron.deny
+ 1168  systemctl status cups
+ 1169  telnet localhost 631
+ 1170  vi printTest.txt
+ 1171  lp printTest.txt
+ 1172  lpoptions -d HP_DeskJet_2600_series
+ 1173  lp printTest.txt
+ 1174  lpq -a
+ 1175  vi /etc/cups/cupsd.conf
+ 1176  vi /etc/cups/cupsd.conf | grep -v "#"
+ 1177  ps -ef | grep -i grep
+ 1178  clear
+ 1179  vi .bash_history
+ 1180  history
+ 1181  vi /etc/cups/ppd/HP_DeskJet_2600_series.ppd
+ 1182  vi /etc/cups/printers.conf
+ 1183  vi /var/spool/cups/c00001
+ 1184  file /var/spool/cups/c00001
+ 1185  file /var/spool/cups/d00001-001
+ 1186  vi /var/spool/cups/d00001-001
+ 1187  ls -la /var/spool/cups/
+ 1188  ls -la /var/log/cups/
+ 1189  less access_log
+ 1190  cd  /var/log/cups/
+ 1191  less access_log
+ 1192  less error_log
+ 1193  less page_log
+ 1194  cd
+ 1195  hostnamectl set-hostname centos7-lfs300
+ 1196  hostnamectl set-hostname centos7
+ 1197  dhclient --help
+ 1198  hostname
+ 1199  ip
+ 1200  ifconfig
+ 1201  ip a s
+ 1202  ping 192.168.1.222
+ 1203  ip addr add 192.168.1.222/24 dev ens33
+ 1204  ip a s
+ 1205  ifconfig
+ 1206  ip addr del 192.168.1.222/24 dev ens33
+ 1207  ip a s
+ 1208  ip addr add 192.168.1.222/24 dev ens33 label ens33:1
+ 1209  ip a s
+ 1210  ip link show
+

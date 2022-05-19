@@ -1,0 +1,1000 @@
+  212  systemctl get-default 
+  213  ssh root@192.168.0.54
+  214  ssh root@192.168.1.54
+  215  nmap 192.168.1.0
+  216  nmap 192.168.1.0/24
+  217  nmap -sP 192.168.1.0/24
+  218  history 
+  219  yum install git
+  220  git config --global user.name "Marcin Kujawski"
+  221  git config --global user.email "markuj5@gmail.com"
+  222  git config --list
+  223  cd
+  224  ls -la
+  225  cd LFS300/
+  226  ls
+  227  git clone https://github.com/mariano-italiano/lfs300_May.git
+  228  ls
+  229  cd lfs300_May/
+  230  ls
+  231  history > day1-history.txt
+  232  vi day1-history.txt
+  233  git status
+  234  git add .
+  235  git commit -m "Day1 history file added"
+  236  git push
+  237  poweroff
+  238  history
+  239  which mkdir
+  240  which -h
+  241  which vi
+  242  df -h
+  243  ls -lF / |grep bin
+  244  cd /usr/bin/
+  245  ls -la
+  246  which getenforce
+  247  cd /usr/sbin/
+  248  ls -la
+  249  ip a s
+  250  whereis geneforce
+  251  whereis mkdir
+  252  cd
+  253  pwd
+  254  cd /usr/share/docs
+  255  cd /usr/share/bison/
+  256  pwd
+  257  cd 
+  258  cd /tmp
+  259  cd ~
+  260  cd /tmp/
+  261  cd $HOME
+  262  echo $HOME
+  263  cd
+  264  cd /usr/share/
+  265  cd .. 
+  266  ls
+  267  cd share/
+  268  cd ../lib
+  269  cd ../share/
+  270  cd ..
+  271  cd lib
+  272  cd /usr/share/
+  273  cd /usr/lib
+  274  cd /
+  275  ls -la
+  276  ls -a
+  277  ls -la
+  278  tree
+  279  cd /home
+  280  tree
+  281  cd /
+  282  ls -la
+  283  cd bin
+  284  pwd
+  285  ls
+  286  ls -la | wc-l
+  287  ls -la | wc -l
+  288  cd /usr/bin/
+  289  ls -la | wc -l
+  290  cd /
+  291  ls -la
+  292  cd
+  293  ls -la
+  294  ln -s myfile link1
+  295  ls -la
+  296  vi myfile
+  297  vi link1 
+  298  rm myfile
+  299  ls -la
+  300  vi link1
+  301  ls -la
+  302  ls -li
+  303  ln myfile2 link2
+  304  ls -la
+  305  ls -li
+  306  vi myfile2
+  307  vi link2
+  308  vi myfile2
+  309  vi link2
+  310  vi myfile2
+  311  rm link2
+  312  ls -li
+  313  ln myfile2 link2
+  314  ls -li
+  315  rm myfile2
+  316  ls -li
+  317  ln myfile2 link2
+  318  ln myfile3 link3
+  319  ls -li
+  320  find . -inum 930004
+  321  cd /tmp
+  322  cd
+  323  cd -
+  324  cd /home/student/
+  325  cd
+  326  pushd -h
+  327  pushd -help
+  328  pushd --help
+  329  pushd /home/student
+  330  cd
+  331  popd
+  332  pushd /tmp
+  333  popd
+  334  $HOME_STUDENT=/home/student
+  335  HOME_STUDENT=/home/student
+  336  cd $HOME_STUDENT
+  337  pwd
+  338  cd
+  339  clear
+  340  echo $PS1
+  341  PS1="\h:@\u > "
+  342  PS1="\h:@\u terminal "
+  343  PS1="\h@\u terminal "
+  344  PS1="FQDN=\h cmd> "
+  345  PS1="\h:\u \t > "
+  346  PS1="\h:\u \w > "
+  347  cd /tmp
+  348  cd /var/lo
+  349  PS1="[\u@\h \w]\$"
+  350  PS1="[\u@\h | dir=\w]\$"
+  351  PS1="[\u@\h \W]\$"
+  352  pwd
+  353  cd
+  354  PS1="[\u@\h \W]\$ "
+  355  ls -la
+  356  PS1="[\u@\h \W]\# "
+  357  cd 
+  358  PS1="[\u@\h \W]\$ "
+  359  ls -la
+  360  vi .bashrc
+  361  vi /etc/bashrc 
+  362  cat /etc/bashrc | grep PS1 -n
+  363  locate zip
+  364  locate zip | grep -i bin
+  365  locate ip
+  366  locate ip | grep -i bin
+  367  man find 
+  368  find /home/student -type d -empty
+  369  find /home/student -name D* -type d -empty
+  370  vi /home/student/test1.json
+  371  cp -rp /home/student/test1.json /home/student/test2.json
+  372  cp -rp /home/student/test1.json /home/student/test3.json
+  373  ls -la /home/student/
+  374  chown student:student /home/student/*.json
+  375  ls -la /home/student/
+  376  cd /home/student/
+  377  find . -type f *.json
+  378  find . -type f "*.json"
+  379  find . -type f -name *.json
+  380  find . -type f -name "*.json"
+  381  cd
+  382  find . -type f -user student 
+  383  find / -type f -user student 
+  384  find / -type f -user student | grep -v "/."
+  385  find /home/student/ -type f -name "*.json" -exec cp {} /tmp/ \;
+  386  ls -la /tmp/*json
+  387  rpm --help
+  388  rpm -qa
+  389  rpm -qa | sort > all_RPMs.txt
+  390  less all_RPMs.txt
+  391  rpm -qa | grep -i nano
+  392  rpm -qa | grep -i kernel
+  393  rpm -e nano-2.3.1-10.el7.x86_64
+  394  rpm -qa | grep -i nano
+  395  nano
+  396  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/nano-2.3.1-10.el7.x86_64.rpm
+  397  ls
+  398  rpm -ivh nano-2.3.1-10.el7.x86_64.rpm
+  399  rpm -qa | grep -i nano
+  400  rpm --help
+  401  mycommand
+  402  which yum
+  403  ls -la /usr/bin/yum
+  404  ls -la /usr/bin/dnf
+  405  rpm -e nano 
+  406  rpm -qa | grep -i nano
+  407  yum repolist 
+  408  yum install nano
+  409  yum install nano -y
+  410  yum search nano
+  411  yum search netstat
+  412  yum repoinfo
+  413  vi /etc/yum.repos.d/CentOS-Base.repo
+  414  yum remove nano
+  415  which netstat
+  416  yum provides "/usr/bin/netstat"
+  417  yum provides "*netstat"
+  418  yum localinstall nano-2.3.1-10.el7.x86_64.rpm 
+  419  yum grouplist
+  420  yum group install "Basic Web Server"
+  421  yum history list
+  422  yum history undo 105
+  423  yum history undo 104
+  424  yum history list
+  425  yum history redo 106
+  426  yum history list
+  427  yum repolist
+  428  yum repoinfo
+  429  yum-config-manager --disablerepo google-chrome
+  430  yum repolist
+  431  vi /etc/yum.repos.d/google-chrome.repo 
+  432  yum --help
+  433  yum --disablerepo=google-chrome
+  434  yum --disablerepo=google-chrome update
+  435  yum-config-manager --help
+  436  yum-config-manager --disable google-chrome
+  437  yum repolist
+  438  vi /etc/yum.repos.d/google-chrome.repo 
+  439  yum repolist
+  440  vi /etc/yum.repos.d/google-chrome.repo 
+  441  yum repolist
+  442  yum-config-manager --help
+  443  yum repolist
+  444  wget http://mirror.centos.org/altarch/7/os/aarch64/Packages/git-all-1.8.3.1-23.el7_8.noarch.rpm
+  445  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/kernel-3.10.0-1160.el7.x86_64.rpm
+  446  wget http://mirror.centos.org/altarch/7/os/aarch64/Packages/NetworkManager-1.18.8-1.el7.aarch64.rpm
+  447  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/createrepo-0.9.9-28.el7.noarch.rpm
+  448  ls -la
+  449  ls -la *.rpm
+  450  mkdir RPMs; mv *.rpm RPMs/
+  451  ls -la
+  452  cd RPMs\
+  453  cd RPMs
+  454  ls -la
+  455  yum localinstall createrepo-0.9.9-28.el7.noarch.rpm 
+  456  rpm -qa|grep-i createrepo
+  457  rpm -qa|grep -i createrepo
+  458  createrepo -h
+  459  [A
+  460  createrepo --database /root/RPMs/
+  461  ls -la
+  462  cd repodata
+  463  ls -la
+  464  vi repomd.xml
+  465  cd ..
+  466  cd 
+  467  yum repolist
+  468  yum-config-manager --add-repo file:///root/RPMs/
+  469  yum repolist
+  470  vi /etc/yum.repos.d/root_RPMs_.repo
+  471  yum repolist
+  472  yum module list
+  473  cd /proc/
+  474  mkdir test
+  475  df -h
+  476  df -hT
+  477  cd 
+  478  du -h
+  479  du --help
+  480  du -sh /tmp/*
+  481  du -sh /usr/lib64/
+  482  du -sh /tmp/
+  483  du -sh /usr/lib64/* | head
+  484  df -h
+  485  cd /var
+  486  du -sh *
+  487  du -sh * | grep M
+  488  du -sh * | grep G
+  489  cd cache/
+  490  du -sh * 
+  491  cd yum
+  492  ls -la
+  493  du -sh * 
+  494  cd x86_64/
+  495  du -sh * 
+  496  cd 7/
+  497  du -sh * 
+  498  yum clean all
+  499  du -sh * 
+  500  cd
+  501  du --max-depth=1 -hx /
+  502  du --help
+  503  du --max-depth=1 -hx /
+  504  du --max-depth=1 -hx /home
+  505  cd /usr
+  506  du --max-depth=1 -hx .
+  507  blkid
+  508  lsblk
+  509  cat /proc/partitions 
+  510  partprobe 
+  511  cat /proc/partitions 
+  512  for i in {0..2}; do echo "- - -" > /sys/class/scsi_host/host$i/scan; done
+  513  for i in {1..10}; do mkdir /tmp/lfstest_$i; done
+  514  ls -la /tmp/ | grep -i lfs*
+  515  cat /proc/partitions 
+  516  fdisk /dev/sdb
+  517  gfisk /dev/sdb
+  518  gdisk /dev/sdb
+  519  cat /proc/partitions 
+  520  mkfs.ext4 /dev/sdb1
+  521  blkid
+  522  gdisk /dev/sdb
+  523  blkid
+  524  pvcreate /dev/sdb2
+  525  vgcreate -h
+  526  vgcreate vg_c7 /dev/sdb2
+  527  lvcreate -h
+  528  lvcreate -L 100%FREE -n lv_c7 vg_c7 
+  529  lvcreate -l 100%FREE -n lv_c7 vg_c7 
+  530  pvs
+  531  vgs
+  532  lvs
+  533  cat /proc/partitions 
+  534  mkfs.xfs /dev/sdb2
+  535  cd
+  536  cat /proc/partitions 
+  537  vgs
+  538  mkfs.xfs /dev/vg_c7/lv_c7 
+  539  blkid
+  540  lsblk
+  541  df -h
+  542  mount -h
+  543  mkdir /physicalPartition
+  544  mkdir /lvm
+  545  mount /dev/sdb1 /physicalPartition
+  546  mount /dev/vg_c7/lv_c7 /lvm/
+  547  df -h
+  548  vi /etc/fstab
+  549  blkid
+  550  vi /etc/fstab
+  551  df -gh
+  552  df -h
+  553  cd /lvm
+  554  ls
+  555  ls -la
+  556  touch plik1 plik2 plik3
+  557  ls -la
+  558  cd ../physicalPartition/
+  559  touch plik1 plik2 plik3
+  560  touch plik1 plik2 plik
+  561  ls -la
+  562  cd ..
+  563  cd
+  564  cd /lvm/
+  565  uimount /lvm
+  566  umount /lvm
+  567  cd 
+  568  umount /lvm
+  569  umount /physicalPartition 
+  570  df -h
+  571  mount -a
+  572  df -h
+  573  vi /etc/fstab 
+  574  umount /lvm
+  575  mount -a
+  576  df -h
+  577  vi /etc/fstab 
+  578  df -h
+  579  mount -a
+  580  df -h
+  581  cd /lvm
+  582  dd if=/dev/urandom of=bigFile bs=1M count=400
+  583  df -h
+  584  dd if=/dev/urandom of=bigFile2 bs=1M count=40
+  585  df -h
+  586  lvs
+  587  vgs
+  588  pvs
+  589  gedit /dev/sdb
+  590  umount /lvm
+  591  cd 
+  592  umount /lvm
+  593  gedit /dev/sdb
+  594  gdisk /dev/sdb
+  595  cat /proc/partitions 
+  596  for i in {0..2}; do echo "- - -" > /sys/class/scsi_host/host$i/scan; done
+  597  cat /proc/partitions 
+  598  partprobe 
+  599  cat /proc/partitions 
+  600  pvcreate /dev/sdb3
+  601  vgextend -h
+  602  vgextend vg_c7 /dev/sdb3
+  603  pvs
+  604  vgs
+  605  lvextend -L +250M /dev/vg_c7/lv_c7 
+  606  lvdisplay /dev/vg_c7/lv_c7
+  607  vgdisplay vg_c7 
+  608  lvs
+  609  df -h
+  610  mount /lvm
+  611  df -h
+  612  df -hT
+  613  xfs_growfs /lvm
+  614  df -hT
+  615  e2label 
+  616  e2label /dev/vg_c7/lv_c7 
+  617  e2label /lvm
+  618  e2label /dev/sdb2
+  619  e2label /dev/sdb1
+  620  e2label /dev/vg_c7/lv_c7 MyLvmPartition
+  621  e2label /dev/sdb2 MyMbrPartition
+  622  e2label /dev/mapper/vg_c7-lv_c7 MyLvmPartition
+  623  lsblk
+  624  e2label /dev/sdb1 MyMbrPartition
+  625  lsblk
+  626  blkid
+  627  vi /etc/fstab 
+  628  umount /physicalPartition 
+  629  df -h
+  630  mount -a
+  631  df -h
+  632  e4defrag -h
+  633  e4defrag --help
+  634  man e4defrag
+  635  e4defrag -c /var/log
+  636  pvs
+  637  vgs
+  638  swapon -s
+  639  cat /proc/swaps 
+  640  lvcreate -n swap2 -L 200M vg_c7 
+  641  lvs
+  642  mkswap /dev/vg_c7/swap2 
+  643  cat /proc/swaps 
+  644  swapon /dev/vg_c7/swap2
+  645  cat /proc/swaps 
+  646  df -h
+  647  cd /lvm/
+  648  ls
+  649  ls -lah
+  650  mv bigFile swap3
+  651  mkswap swap3
+  652  swapon swap3
+  653  swapon -s
+  654  swapoff swap3
+  655  swapon -s
+  656  swapoff swap2
+  657  swapoff /dev/vg_c7/swap2 
+  658  swapoff swap2
+  659  swapon -s
+  660  yum groupinstall file-server -y
+  661  systemctl status firewalld.service 
+  662  systemctl disable --now firewalld.service
+  663  systemctl status firewalld.service 
+  664  systemctl status rpcbind 
+  665  systemctl status nfs-server.service 
+  666  systemctl start nfs-server.service 
+  667  systemctl status nfs-server.service 
+  668  cd
+  669  cd /lvm/
+  670  ls
+  671  mkdir nfs
+  672  mv plik* nfs/
+  673  ls -la nfs/
+  674  chmod 777 nfs/
+  675  chmod 777 nfs/ -R
+  676  ls -la nfs/
+  677  vi /etc/exports 
+  678  exportfs -rav
+  679  systemctl restart nfs-server.service 
+  680  systemctl status nfs-server.service 
+  681  showmount -e localhost
+  682  df -h
+  683  ls -la
+  684  cd nfs/
+  685  ls -la
+  686  ll
+  687  alias
+  688  cd /var/log
+  689  ls -la
+  690  ls -la audit/
+  691  getenforce 
+  692  ssh 192.168.1.54
+  693  history
+  694  ls
+  695  cd
+  696  cd LFS300/
+  697  ls
+  698  cd lfs300_May/
+  699  ls -la
+  700  vi day2-history-centos7.txt
+  701  vi day2-history-centos8.txt
+  702  git status
+  703  git add /
+  704  git add .
+  705  git commit -m "Adding day2 history files"
+  706  git push
+  707  git config --global core.hookspath 'hooks' && git config --global credential.helper store
+  708  git push 
+  709  vi rd-break.txt
+  710  mv rd-break.txt rd-break.md
+  711  git add .
+  712  git commit -m "Add rd.break"
+  713  git push
+  714  poweroff
+  715  journalctl 
+  716  systemctl status chronyd.service 
+  717  systemctl disable --now chronyd.service
+  718  yum install ntpd
+  719  yum install ntp
+  720  systemctl status ntpd
+  721  systemctl start ntpd
+  722  systemctl status ntpd
+  723  timedatectl 
+  724  vi /etc/ntp.conf 
+  725  ntpd -p
+  726  ntpq -p
+  727  date
+  728  yum provides *finger
+  729  yum repolist
+  730  yum provides *finger
+  731  yum install finger
+  732  finger student
+  733  last
+  734  su - student
+  735  su student
+  736  cat /etc/passwd
+  737  cat /etc/passwd | grep -i student
+  738  vi /etc/passwd
+  739  su - student
+  740  vi /etc/passwd
+  741  cat /etc/shadow | grep root
+  742  :
+  743  who
+  744  whami
+  745  whoami
+  746  vi /etc/profile
+  747  adduser 
+  748  useradd 
+  749  useradd -u 1100 -G wheel -d /tmp/student2 -s /bin/ksh -c "Student 2 Test User" student2
+  750  cat /etc/passwd | student2
+  751  cat /etc/passwd | grep -i student2
+  752  id student2
+  753  su - student2
+  754  usermod -s /bin/bash student2
+  755  cat /etc/passwd | grep -i student2
+  756  su - student2
+  757  useradd -m -c "Student 3 Test User" student3
+  758  su - student3
+  759  id student3
+  760  userdel 
+  761  ls -la /home/student3
+  762  userdel -r student3
+  763  ls -la /home/student3
+  764  passwd 
+  765  passwd --help
+  766  passwd student2
+  767  passwd -l student2
+  768  passwd -u student2
+  769  id student2
+  770  usermod -G ftp student2
+  771  id student2
+  772  usermod -aG wheel student2
+  773  id student2
+  774  usermod --help
+  775  groupadd 
+  776  groupadd finanse
+  777  groupadd marketing
+  778  cat /etc/group
+  779  chage
+  780  chage --help
+  781  man chage
+  782  chage student2
+  783  chage student2 -l
+  784  chage -M 10 student2
+  785  chage -E "2022-05-19" student2
+  786  chage -I 5 student2
+  787  chage student2 -l
+  788  chage -I 15 student2
+  789  chage student2 -l
+  790  chage -I 250 student2
+  791  chage student2 -l
+  792  chage -M 99999 -I -1 -E -1 student2
+  793  chage student2 -l
+  794  chage -d 0 student2
+  795  vi /etc/sudoers
+  796  sudo --help
+  797  su - student2
+  798  useradd s3
+  799  passwd s3
+  800  student
+  801  vi /etc/sudoers.d/student 
+  802  vi /etc/sudoers
+  803  ls -la /etc/sudoers
+  804  su - student2
+  805  usermod -aG finanse student2
+  806  id student2
+  807  su - student2
+  808  vi /etc/sudoers
+  809  su - student2
+  810  echo $HOME
+  811  echo $SHELL
+  812  echo $PATH
+  813  echo $EDITOR
+  814  szkolenie=LFS300
+  815  echo $szkolenie
+  816  su - student2
+  817  ls -la
+  818  chmod 721
+  819  chmod 721 myfile
+  820  ls -la myfile
+  821  chmod o+r myfile
+  822  ls -la myfile
+  823  chmod o-x myfile
+  824  ls -la myfile
+  825  chmod u-x myfile
+  826  chmod g+x myfile
+  827  ls -la myfile
+  828  chmod o+wx myfile
+  829  ls -la myfile
+  830  chown student myfile
+  831  ls -la myfile
+  832  chgrp wheel myfile
+  833  ls -la myfile
+  834  chown student2:finanse myfile
+  835  ls -la myfile
+  836  tree
+  837  mkdir permissions
+  838  mv wyjscieblad* permissions/
+  839  ls -la permissions/
+  840  ls -la
+  841  umask
+  842  clear
+  843  tree permissions/
+  844  ls -la permissions/
+  845  chown student:finanse -R permissions/
+  846  ls -la permissions/
+  847  vi /etc/ssh/sshd_config 
+  848  vi /tmp/bannerStudent2
+  849  systemctl restart sshd
+  850  vi /etc/ssh/sshd_config 
+  851  systemctl restart sshd
+  852  cp -rp /tmp/bannerStudent2 /tmp/student2/
+  853  vi /etc/motd 
+  854  mv /tmp/student2/bannerStudent2 /tmp/student2/.hushlogin
+  855  vi /etc/ssh/sshd_config 
+  856  systemctl restart sshd
+  857  chown student2:student2 /tmp/student2/.hushlogin
+  858  vi /etc/motd 
+  859  vi /etc/profile
+  860  cp -rp /tmp/student2/s2banner /tmp/banner
+  861  ls -la /tmp/banner
+  862  vi /tmp/banner
+  863  cat /tmp/banner
+  864  echo -e "This is test sentence \n druga linia"
+  865  echo -e "This is test sentence \ndruga linia"
+  866  echo -e "This is test sentence \tdruga linia"
+  867  echo -e "This is test sentence \t\t\tdruga linia"
+  868  echo "This is test sentence \t\t\tdruga linia"
+  869  cat /tmp/banner > /tmp/newBanner
+  870  vi /tmp/newBanner
+  871  vi test
+  872  cat test
+  873  sed '1,4s/test/bank' test
+  874  sed 's/test/bank' test
+  875  sed  's/test/bank' test
+  876  sed '1,4s/test/bank/' test
+  877  sed 's/test/bank/' test
+  878  cat test
+  879  sed '1,4s/test/bank/' test
+  880  sed -i '1,4s/test/bank/' test
+  881  vi test
+  882  sed '1,4s/test/bank/' test
+  883  vi test
+  884  sed '1,4s/test/bank/' test
+  885  sed 's/\bfoo\b/linux/' test
+  886  vi test
+  887  sed 's/\bfoo\b/linux/' test
+  888  sed 's/\bFoo\b/linux/' test
+  889  sed 's|/bin/bash|linux/' test
+  890  sed 's|/bin/bash|linux|' test
+  891  sed 's|/bash|/sh|' test
+  892  sed 's$/bash$/sh$' test
+  893  sed 's/\b[1-3]\{3\}\b/numer' test
+  894  sed 's/\b[1-3]\{3\}\b/numer/' test
+  895  sed 's/\b[a-z][1-3]\{3\}\b/numer/' test
+  896  sed 's/\b[1-3]\{3\}\b/numer/' test
+  897  sed 's/\b[1-7]\{3\}\b/numer/' test
+  898  sed 's/\b[1-7]\{3\}\b/numer trzycyfrowy & test po/' test
+  899  sed '6!s/\b[1-7]\{3\}\b/numer trzycyfrowy & test po/' test
+  900  awk '{ print $0 }' /etc/passwd
+  901  awk -F: '{ print $1 }' /etc/passwd
+  902  awk -F: '{ print $1,$2 }' /etc/passwd
+  903  awk -F: '{ print $1,$5 }' /etc/passwd
+  904  awk -F: '{ print $1 $6 }' /etc/passwd
+  905  awk -F: '{ print $1,$6 }' /etc/passwd
+  906  awk -F: '{ print User $1 "ma home dir w " $6 }' /etc/passwd
+  907  awk -F: '{ print "User " $1 " ma home dir w " $6 }' /etc/passwd
+  908  tr --help
+  909  cat test
+  910  cat test | tr 'a-z' 'A-Z'
+  911  cat test | wc -l
+  912  cat test | wc --help
+  913  cat test | wc -L
+  914  cat test | wc -w
+  915  cat test | wc -c
+  916  sort test
+  917  sort test -r
+  918  sort -k2 test
+  919  cat test | sort
+  920  less /var/log/messages
+  921  cat /var/log/messages | grep -i org.gnome.SettingsDaemon.Rfkill.desktop
+  922  grep org.gnome.SettingsDaemon.Rfkill.desktop /var/log/messages
+  923  vi test
+  924  cat test
+  925  uniq test
+  926  uniq --help
+  927  uniq -c -u test
+  928  uniq -c -u test -i
+  929  sort test | uniq -c -u -i
+  930  ls -la
+  931  ls -la | cut -d " " -f 1,9
+  932  ls -la | cut -d " " -f 1,12
+  933  ls -la | cut -d " " -f 1,11
+  934  ls -la | cut -d " " -f 1,10
+  935  ls -la | cut -d " " -f 1,15
+  936  cat /etc/passwd | cut -d ":" -f 1,6
+  937  cat /etc/passwd | cut -d ":" -f 1-3
+  938  grep -h
+  939  grep --help
+  940  grep -C 5 student /etc/passwd
+  941  grep -C 2 student /etc/passwd
+  942  grep -A 2 -B 2student /etc/passwd
+  943  grep -A 2 -B 2 student /etc/passwd
+  944  grep  -B 2 student /etc/passwd
+  945  grep  -A 5 student /etc/passwd
+  946  grep -A 10 org.gnome.SettingsDaemon.Rfkill.desktop /var/log/messages
+  947  grep -A 10 error /var/log/messages
+  948  grep -b 20 -A 10 error /var/log/messages
+  949  grep -B 20 -A 10 error /var/log/messages
+  950  grep -n error /var/log/messages
+  951  grep -C 10 "EXT4-fs error (device sda1): ext4_mb_generate_buddy:758" /var/log/messages
+  952  grep --h
+  953  grep -e sda1 -e sda2  /var/log/messages
+  954  grep -e sda1 -e sda2  /var/log/messages | grep -v fsck
+  955  grep -e sda1 -e sda2  /var/log/messages | grep -v fsck |wc -l
+  956  grep -e sda1 -e sda2  /var/log/messages | grep -v fsck
+  957  grep -e sda1 -e sda2  /var/log/messages | grep EXT4-fs
+  958  grep -e sda1 -e sda2  /var/log/messages | grep -e EXT4-fs -e error
+  959  grep -e sda1 -e sda2  /var/log/messages | grep -e EXT4-fs | grep -e error
+  960  cat test\
+  961  cat test
+  962  grep ^username test
+  963  grep ^username test -n
+  964  grep bash$ test -n
+  965  grep *foo* test -n
+  966  grep .*foo.* test -n
+  967  grep foo test -n
+  968  ./script1.sh
+  969  bash script1.sh
+  970  bash --help
+  971  su - student
+  972  history 
+  973  su - student
+  974  cd LFS300/
+  975  git status
+  976  ls
+  977  cd lfs300_May/
+  978  ls
+  979  git status
+  980  mkdir bash_scripts
+  981  cp -rp /home/student/calc.sh bash_scripts/
+  982  cp -rp /home/student/hello.sh bash_scripts/
+  983  cp -rp /home/student/loop.sh bash_scripts/
+  984  cp -rp /home/student/skrypt1.sh bash_scripts/
+  985  ls
+  986  touch day3-history-centos7.txt
+  987  history 
+  988  cat /root/.bash_history 
+  989  vi  day3-history-centos7.txt
+  990  vi  day3-history-centos8.txt
+  991  git status
+  992  git add .
+  993  git commit -m "Adding day3 scripts and history"
+  994  git push
+  995  su - student
+  996  su - student2
+  997  poweroff
+  998  kill
+  999  kill --help
+ 1000  man kill
+ 1001  ps
+ 1002  ps -h
+ 1003  ps --help
+ 1004  ps --help simple
+ 1005  ps --help list
+ 1006  man ps
+ 1007  ps -ef
+ 1008  ps -ef | grep -i sshd
+ 1009  kill -19 2528
+ 1010  ps -ef | grep -i sshd
+ 1011  kill -18 2528
+ 1012  kill -15 2528
+ 1013  ps -ef | grep -i sshd
+ 1014  kill 
+ 1015  kill -s
+ 1016  kill -l
+ 1017  ps aux
+ 1018  ps axo pid,comm
+ 1019  ps axo start,priority,pid,comm
+ 1020  ps -efl
+ 1021  ps -efL
+ 1022* ps -U student
+ 1023  ps -U root
+ 1024  ps -U root | grep sshd
+ 1025  ps -efU root | grep sshd
+ 1026  alis
+ 1027  alias
+ 1028  pstree
+ 1029  pgrep httpd
+ 1030  pgrep http
+ 1031  pgrep ssh
+ 1032  pgrep -h
+ 1033  pgrep ssh -l
+ 1034  pgrep ssh -a
+ 1035  pgrep ssh -al
+ 1036  ps axo pid,command
+ 1037  ps axo pid,command | grep -i ssh
+ 1038  ps axo pid,command | grep -i ssh | grep -v grep
+ 1039  pgrep ssh -al
+ 1040  pgrep ssh -alc
+ 1041  pgrep ssh -alP
+ 1042  pgrep ssh -al -d "|"
+ 1043  pgrep -Ual student
+ 1044  pgrep -U student
+ 1045  pgrep -U root
+ 1046  pgrep -al -U root
+ 1047  pgrep -l -U root
+ 1048  pgrep -h
+ 1049  uptime 
+ 1050  ls
+ 1051  vi skrypt.sh
+ 1052  chmod 700 skrypt.sh 
+ 1053  ./skrypt.sh &
+ 1054  ps -ef | grep skrypt
+ 1055  ./skrypt.sh &
+ 1056  kill -9 3282
+ 1057  vi skrypt.sh
+ 1058  ./skrypt.sh &
+ 1059  vi skrypt.sh
+ 1060  ./skrypt.sh &
+ 1061  kill -9 3295
+ 1062  vi skrypt.sh
+ 1063  ./skrypt.sh 
+ 1064  vi skrypt.sh
+ 1065  ./skrypt.sh &
+ 1066  tail -f /tmp/skrypt.log 
+ 1067  vi skrypt.sh
+ 1068  rm /tmp/skrypt.log
+ 1069  ps -ef | grep -i skrypt
+ 1070  kill -15 3313
+ 1071  ps -ef | grep -i skrypt
+ 1072  ./skrypt.sh &
+ 1073  ps axo priority,pid | grep -i 3355
+ 1074  ps axo priority,pid,comm | grep -i 3355
+ 1075  ps axo priority,nice,pid,comm | grep -i 3355
+ 1076  nice +5 3355
+ 1077  renice +5 3355
+ 1078  ps axo priority,nice,pid,comm | grep -i 3355
+ 1079  renice -20 3355
+ 1080  ps axo priority,nice,pid,comm | grep -i 3355
+ 1081  renice -40 3355
+ 1082  renice -60 3355
+ 1083  renice +200 3355
+ 1084  renice +20 3355
+ 1085  ps axo priority,nice,pid,comm | grep -i 3355
+ 1086  cat /tmp/skrypt.log 
+ 1087  kill -15 3355
+ 1088  nice -20 ./skrypt.sh 
+ 1089  nice -20 ./skrypt.sh &
+ 1090  ps axo priority,nice,pid,comm | grep -i 3467
+ 1091  kill -9 3467
+ 1092  pidof shhd
+ 1093  pidof shh
+ 1094  pidof ssh
+ 1095  pidof sshd
+ 1096  pidof skrypt
+ 1097  pidof skrypt.sh
+ 1098  pidof audits
+ 1099  pidof auditd
+ 1100  pidof audit
+ 1101  pidof httpd
+ 1102  jobs
+ 1103  ./skrypt.sh &
+ 1104  jobs
+ 1105  kill -15 3545
+ 1106  at -h
+ 1107  at -l
+ 1108  man at
+ 1109  echo "Test at" | at now + 5 sec
+ 1110  echo "Test at" | at now + 5 second
+ 1111  echo "Test at" | at now + 5 seconds
+ 1112  echo "Test at" | at now + 5 days
+ 1113  echo "Test at" | at now + 5 minutes
+ 1114  echo "Test at" | at now + 5 seconds
+ 1115  date
+ 1116  echo "Test at nowy" | at -m 10:28
+ 1117  date
+ 1118  atq
+ 1119  date
+ 1120  atq
+ 1121  date
+ 1122  touch plikAt.txt | at -m 10:29
+ 1123  date
+ 1124  ls -la
+ 1125  atq
+ 1126  crontab -l
+ 1127  crontab -l student
+ 1128  crontab -l -u student
+ 1129  10:26:00 2022 a root
+ 1130  28      Thu May 19 10:31:00 2022 a root
+ 1131  crontab -e
+ 1132  vi cron.sh
+ 1133  chmod 700 cron.sh
+ 1134  pwd
+ 1135  crontab -e
+ 1136  crontab -l
+ 1137  ls -la
+ 1138  ls -la | grep cron
+ 1139  crontab -l
+ 1140  vi cron.sh 
+ 1141  ls -la | grep cron
+ 1142  date
+ 1143  vi cron.sh 
+ 1144  crontab -l
+ 1145  ls -la | grep cron
+ 1146  crontab -l
+ 1147  crontab -e
+ 1148  date
+ 1149  ls -la | grep cron
+ 1150  which touch
+ 1151  crontab -e
+ 1152  ls -la | grep cron
+ 1153  date
+ 1154  ls -la | grep cron
+ 1155  vi /etc/crontab 
+ 1156  vi /etc/cron.d/sysstat
+ 1157  crontab -e
+ 1158  ls -la | grep cron
+ 1159  date
+ 1160  ls -la | grep cron
+ 1161  chown student cron.log 
+ 1162  date\
+ 1163  date
+ 1164  ls -la | grep cron
+ 1165  vi /etc/cron.d/raid-check 
+ 1166  vi /etc/cron.hourly/0anacron
+ 1167  vi /etc/cron.deny 
+ 1168  systemctl status cups
+ 1169  telnet localhost 631
+ 1170  vi printTest.txt
+ 1171  lp printTest.txt 
+ 1172  lpoptions -d HP_DeskJet_2600_series
+ 1173  lp printTest.txt 
+ 1174  lpq -a
+ 1175  vi /etc/cups/cupsd.conf
+ 1176  vi /etc/cups/cupsd.conf | grep -v "#"
+ 1177  ps -ef | grep -i grep
+ 1178  clear
+ 1179  vi .bash_history 
+ 1180  history
+ 1181  vi /etc/cups/ppd/HP_DeskJet_2600_series.ppd 
+ 1182  vi /etc/cups/printers.conf 
+ 1183  vi /var/spool/cups/c00001 
+ 1184  file /var/spool/cups/c00001
+ 1185  file /var/spool/cups/d00001-001 
+ 1186  vi /var/spool/cups/d00001-001
+ 1187  ls -la /var/spool/cups/
+ 1188  ls -la /var/log/cups/
+ 1189  less access_log
+ 1190  cd  /var/log/cups/
+ 1191  less access_log
+ 1192  less error_log
+ 1193  less page_log 
+ 1194  cd
+ 1195  hostnamectl set-hostname centos7-lfs300
+ 1196  hostnamectl set-hostname centos7
+ 1197  dhclient --help
+ 1198  hostname
+ 1199  ip
+ 1200  ifconfig
+ 1201  ip a s
+ 1202  ping 192.168.1.222
+ 1203  ip addr add 192.168.1.222/24 dev ens33
+ 1204  ip a s
+ 1205  ifconfig 
+ 1206  ip addr del 192.168.1.222/24 dev ens33
+ 1207  ip a s
+ 1208  ip addr add 192.168.1.222/24 dev ens33 label ens33:1
+ 1209  ip a s
+ 1210  ip link show
+ 1211  history > LFS300/lfs300_May/day4.txt
